@@ -48,7 +48,7 @@ To install the necessary dependencies, run the following command:
 ```bash
 pip install torch pandas numpy matplotlib scikit-learn tensorboard
 ```
-###🧑‍💻 How to Run
+## 📋 How To Run
 
 ```bash
 python main.py
