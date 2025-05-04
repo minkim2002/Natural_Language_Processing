@@ -47,28 +47,12 @@ To install the necessary dependencies, run the following command:
 
 ```bash
 pip install torch pandas numpy matplotlib scikit-learn tensorboard
-
+```
 ###🧑‍💻 How to Run
-Run the Sentiment Analysis Model
-To train and test the sentiment analysis model, use the following steps:
-
-Prepare the Dataset
-Ensure you have training_data.csv, test_data.csv, and tokens2index.json in the project directory. The tokens2index.json file should map words to indices.
-
-Download GloVe Pre-trained Embedding
-Download the GloVe embedding from GloVe website.
-Extract the file and specify the path to glove.6B.200d.txt in the glove_file variable in main.py.
-
-Setup the Environment
-Install the necessary dependencies by running:
-
-```bash
-pip install -r requirements.txt
-Run the Model
-To train the model, run the following command:
 
 ```bash
 python main.py
+```
 The script will:
 
 Load the training and testing data.
