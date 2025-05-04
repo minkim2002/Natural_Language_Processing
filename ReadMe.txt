@@ -7,46 +7,44 @@ This project implements a sentiment analysis model using an LSTM (Long Short-Ter
 ## 📋 Requirements
 
 ### Libraries & Tools
-- Python 3.x
-- PyTorch
-- Pandas
-- NumPy
-- Matplotlib
-- GloVe pre-trained embeddings
-- scikit-learn
-- TensorBoard
+- **Python 3.x**
+- **PyTorch**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **GloVe pre-trained embeddings**
+- **scikit-learn**
+- **TensorBoard**
 
-🧑‍💻 How to Run
-Run the Sentiment Analysis Model
-To train and test the sentiment analysis model, use the following steps:
+---
 
-Prepare the Dataset
-Ensure you have training_data.csv, test_data.csv, and tokens2index.json in the project directory. The tokens2index.json file should map words to indices.
+## 🧑‍💻 How to Run
 
-Download GloVe Pre-trained Embedding
-Download the GloVe embedding from GloVe website.
-Extract the file and specify the path to glove.6B.200d.txt in the glove_file variable in main.py.
+### **Run the Sentiment Analysis Model**
 
-Setup the Environment
-Install the necessary dependencies by running:
+To train and test the sentiment analysis model, follow these steps:
 
-bash
-pip install -r requirements.txt
-Run the Model
-To train the model, run the following command:
+---
 
-bash
-python main.py
-The script will:
+### 1. **Prepare the Dataset**  
+Ensure you have the following files in the project directory:
+- `training_data.csv`
+- `test_data.csv`
+- `tokens2index.json`
 
-Load the training and testing data.
+The `tokens2index.json` file should map words to indices. If you don’t have them, you can generate or download them based on your data.
 
-Initialize the LSTM model.
+---
 
-Train the model using binary cross-entropy loss.
+### 2. **Download GloVe Pre-trained Embedding**  
+- Download the GloVe embedding from the [GloVe website](https://nlp.stanford.edu/data/glove.6B.zip).
+- Extract the file and specify the path to `glove.6B.200d.txt` in the `glove_file` variable in `main.py`.
 
-Save checkpoints periodically during training.
+---
 
-Evaluate the model on the test dataset.
+### 3. **Setup the Environment**  
+To install the necessary dependencies, run the following command:
 
-If you want to run inference only, change the mode variable in the main.py file to 'test'.
+```bash
+pip install torch pandas numpy matplotlib scikit-learn tensorboard
+
